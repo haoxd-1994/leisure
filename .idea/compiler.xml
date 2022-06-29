@@ -6,8 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="leisure-common" />
+        <module name="leisure-pojo" />
+        <module name="leisure-schedule" />
+        <module name="leisure-db" />
+        <module name="leisure-service" />
+        <module name="leisure-es" />
         <module name="leisure-api" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="leisure-api" options="-parameters" />
+      <module name="leisure-common" options="-parameters" />
+      <module name="leisure-db" options="-parameters" />
+      <module name="leisure-es" options="-parameters" />
+      <module name="leisure-pojo" options="-parameters" />
+      <module name="leisure-schedule" options="-parameters" />
+      <module name="leisure-service" options="-parameters" />
+    </option>
   </component>
 </project>
